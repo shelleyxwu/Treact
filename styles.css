@@ -430,13 +430,17 @@ header .container {
        
 }
 
-.plan__stripe-1, .plan__stripe-2, .plan__stripe-3 {
+.plan__1 .stripe__1,
+.plan__2 .stripe__2,
+.plan__3 .stripe__3 {
     height: 8px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
+
+
 
 .plan__top, .plan__bottom, .plan__middle {
     width: 100%;
@@ -473,12 +477,27 @@ header .container {
     line-height: 1.5;
 }
 
-.btn .plan__1,
-.btn .plan__2,
-.btn .plan__3 {
-   padding: 16px 32px;
-   transform: translate(1px, -1px);
-   box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+.plan__1 .btn,
+.plan__1 .stripe__1 {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__3 .btn,
+.plan__3 .stripe__3 {
+   background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%); 
+}
+
+.plan__1 .btn,
+.plan__2 .btn,
+.plan__3 .btn, {
+   padding: 0px 48px;
+}
+
+.plan__1 .btn:hover,
+.plan__2 .btn:hover,
+.plan__3 .btn:hover,{
+    transform: translate(1px, -1px);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 
