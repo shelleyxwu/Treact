@@ -404,26 +404,49 @@ header .container {
 
 .plans {
     display: flex;
-    justify-content: space-between;
     width: 100%;
-    position: relative;
     z-index: 100;
 }
 
 .plan {
     width: calc(100%/3);
-    display: flex;
-    flex-direction: column;
+    padding: 32px;
 
 }
 
 .plan__stripe-1, .plan__stripe-2, .plan__stripe-3 {
-    width: 100%;
     height: 8px;
     position: absolute;
     top: 0;
     left: 0;
 }
+
+.plan__top, .plan__bottom, .plan__middle {
+    width: 100%;
+    display: flex; gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 16px;
+    border-bottom: #718096 0.5px solid;
+   
+}
+
+.plan__feature {
+    margin-top: 20px;
+    font-weight: 500;
+    color: #718096;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.plan__button:hover {
+    transform: translate(1px, -1px);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+
 
 .plan__stripe-1 {
     background: linear-gradient(115 deg, rgb (56, 178, 172 0%), rgb(129, 230, 217) 100% );
@@ -440,6 +463,7 @@ header .container {
 .plan__duration {
     opacity: 50%;
     font-size: 16px;
+    letter-spacing: 1px;
 }
 
 
