@@ -418,29 +418,26 @@ header .container {
 }
 
 .plans {
-    display: flex;
+    display: flex; gap: 48px;
     width: 100%;
     z-index: 100;
-    
 }
 
 .plan {
     width: calc(100%/3);
     padding: 32px;
-       
+    border-radius: 16px; 
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 .plan__1 .stripe__1,
 .plan__2 .stripe__2,
 .plan__3 .stripe__3 {
     height: 8px;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
+    position: relative;
+    padding: 0;
 }
-
-
 
 .plan__top, .plan__bottom, .plan__middle {
     width: 100%;
@@ -459,14 +456,13 @@ header .container {
 .plan__3 .plan__middle,
 .plan__3 .plan__bottom {
     border-top: 2px solid rgb(229, 231, 235);
-    border-bottom: 2px solid rgb(229, 231, 235);
+    
 }
 
 .plan__2 .plan__top,
 .plan__2 .plan__middle, 
 .plan__2 .plan__bottom {
    border-top: 2px solid rgb(102, 126, 234);
-   border-bottom: 2px solid rgb(102, 126, 234);
 }
 
 .plan__feature {
@@ -487,15 +483,21 @@ header .container {
    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%); 
 }
 
+.plan__2 .btn {
+    background: azure;
+    color: #6415ff;
+}
+
 .plan__1 .btn,
 .plan__2 .btn,
-.plan__3 .btn, {
-   padding: 0px 48px;
+.plan__3 .btn {
+   padding: 16px 32px;
+   width: 60%;
 }
 
 .plan__1 .btn:hover,
 .plan__2 .btn:hover,
-.plan__3 .btn:hover,{
+.plan__3 .btn:hover{
     transform: translate(1px, -1px);
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
@@ -526,7 +528,65 @@ header .container {
     color: #fff;
 }
 
+/* TESTIMONIALS */
 
+#testimonials .row {
+    display: flex;
+} 
+
+#testimonials .section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.testimonials__img {
+    display: flex;
+    width: 50%;
+}
+
+/* START */
+
+#start .row {
+    position: relative;
+    overflow: hidden;
+}
+
+.start__container {
+    background-color: rgb(100,21, 255);
+    padding: 96px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.start__title {
+    color: #fff;
+}
+
+.start__buttons {
+    display: flex;
+    align-items: center;
+    
+}
+
+.start__button {
+    background-color: rgba(229,62,62); 
+}
+
+.contact__button {
+    border: 1px solid #fff;
+    
+}
 
 
 
