@@ -531,18 +531,62 @@ header .container {
 /* TESTIMONIALS */
 
 #testimonials .row {
-    display: flex;
+    display: flex; gap: 24px;
 } 
 
 #testimonials .section {
-    display: flex;
+    display: flex; gap: 16px;
     flex-direction: column;
     width: 50%;
 }
+.section__profile {
+    margin-top: 40px;
+    display: flex; gap: 16px;
+    flex-direction: column;
+}
+
+.section__rating {
+    display: flex;
+    gap: 8px;
+}
+
+.testimonial__bottom {
+    display: flex; gap: 8px;
+    align-items: center;
+    
+}
+
+.testimonial__name {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.testimonial__role {
+    font-weight: 500;
+    font-size: 14px;
+    color: #718096;
+}
+
+
+.testimonial__buttons {
+    display: flex; gap: 16px;
+    align-items: center;
+    
+    
+}
+
+.testimonial__profile-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 .testimonials__img {
-    display: flex;
     width: 50%;
+    display: flex;
+    justify-content: center;
+   
 }
 
 /* START */
@@ -561,12 +605,10 @@ header .container {
     align-items: center;
 }
 
-.start__row {
-    display: flex;
-    justify-content: center;
+.start__row{
+    display: flex; gap: 32px;
     align-items: center;
-    margin: 0 auto;
-    width: 100%;
+    justify-content: center;
 }
 
 .start__title {
@@ -574,19 +616,59 @@ header .container {
 }
 
 .start__buttons {
-    display: flex;
-    align-items: center;
-    
+    display: flex; gap: 16px;
 }
 
 .start__button {
     background-color: rgba(229,62,62); 
 }
+ 
+.start__button:hover {
+    background-color: rgba(229,62,62, 0.8);
+}
+
 
 .contact__button {
     border: 1px solid #fff;
+}
+
+.contact__button:hover {
+    background-color: rgba(247,250,252);
+    color: rgba(100,21,255);
+}
+
+/* FOOTER */
+
+footer {
+    padding: 96px 32px;
+    margin-bottom: -32px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(100,21, 255);
     
 }
+
+.footer__columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+.footer__column--title, .footer__link {
+    color: #fff;
+}
+
+
+
+
+
 
 
 
