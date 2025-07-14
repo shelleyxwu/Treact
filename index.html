@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     
      <script src="https://kit.fontawesome.com/3377a29e8b.js" crossorigin="anonymous"></script>
-    
+    <script src="script.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -27,17 +27,26 @@
               <li><a href="#" class="nav__link">Blog</a></li>
               <li><a href="#" class="nav__link">Pricing</a></li>
               <li><a href="#" class="nav__link">Contact Us</a></li>
-              <li><a href="#" class="nav__link nav__link--login">Login</a></li>
+              <li><a href="#" class="nav__link login">Login</a></li>
               <li>
-                <a href="#" class="nav__link"
-                  ><button class="btn">Sign Up</button></a
-                >
+                <a href="#" class="nav__link"><button class="btn nav__btn">Sign Up</button></a>
               </li>
             </ul>
           </div>
+          <button class="btn__menu" onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
         </div>
       </nav>
-
+      <div class="modal">
+        <button class="btn__menu  btn__menu--close" onclick="closeMenu()"><i class="fa-solid fa-x"></i></button>
+        <div class="modal__links">
+          <a href="#" class="modal__link">About</a>
+          <a href="#" class="modal__link">Blog</a>
+          <a href="#" class="modal__link">Pricing</a>
+          <a href="#" class="modal__link">Contact Us</a>
+          <a href="#" class="modal__link">Login</a>
+          <a href="#" class="modal__link">Sign Up</a>
+        </div>
+      </div>
       <header>
         <div class="container">
           <div class="row">
@@ -45,7 +54,7 @@
               <h1 class="header__title">
                 Beautiful React Templates <span class="purple"> for you.</span>
               </h1>
-              <p>
+              <p class="header__description--para">
                 Our templates are easy to setup, understand and customize. Fully
                 modular components with a variety of pages and components.
               </p>
@@ -434,35 +443,25 @@
         <div class="row footer__row"> 
           <div claass="footer__columns">
           <div class="footer__column">
-          <h5 class="footer__column--title">MAIN</h5>
-            
-            <div class="footer__links">
+          <h5 class="footer__column--title">MAIN</h5>     
               <ul>
                 <li><a href="#" class="footer__link">Blog</a></li>
                 <li><a href="#" class="footer__link">FAQS</li>
                 <li><a href="#" class="footer__link">Support</a></li>
                 <li><a href="#" class="footer__link">About Us</a></li>
               </ul>
-            </div>
-            
           </div>
           <div class="footer__column">
       <h5 class="footer__column--title">PRODUCT</h5>
-            
-            <div class="footer__links">
               <ul>
                 <li><a href="#" class="footer__link">Log In</a></li>
                 <li><a href="#" class="footer__link">Personal</li>
                 <li><a href="#" class="footer__link">Business</a></li>
                 <li><a href="#" class="footer__link">Team</a></li>
               </ul>
-            </div>
-          
           </div>
           <div class="footer__column">
         <h5 class="footer__column--title">PRESS</h5>
-            
-            <div class="footer__links">
               <ul>
                 <li><a href="#" class="footer__link">Logos</a></li>
                 <li><a href="#" class="footer__link">Events</li>
@@ -470,36 +469,41 @@
                 <li><a href="#" class="footer__link">Office</a></li>
               </ul>
             </div>
-            
-          </div>
           <div class="footer__column">
             <h5 class="footer__column--title">TEAM</h5>
-           
-            <div class="footer__links">
               <ul>
                 <li><a href="#" class="footer__link">Career</a></li>
                 <li><a href="#" class="footer__link">Founders</li>
                 <li><a href="#" class="footer__link">Culture</a></li>
                 <li><a href="#" class="footer__link">Onboarding</a></li>
               </ul>
-            </div>
-          
           </div>
           <div class="footer__column">
             <h5 class="footer__column--title">LEGAL</h5>
-          
-            <div class="footer__links">
               <ul>
                 <li><a href="#" class="footer__link">GDPR</a></li>
                 <li><a href="#" class="footer__link">Privacy Policy</li>
                 <li><a href="#" class="footer__link">Terms of Service</a></li>
                 <li><a href="#" class="footer__link">Disclaimer</a></li>
               </ul>
+          </div>
+          </div>
+          <div class="footer__divider"></div>
+          <div class="footer__bottom">
+            <div class="footer__logo--container">
+              <img class="footer__logo" src="/assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="">
+              <h5 class="footer__logo--text">Treact Inc.</h5>
+              </div>
+              <div class="footer__copyright">&copy 2018 Treact Inc. All Rights Reserved.</div>
+            <div class="footer__socials">
+              <a href="#" class="footer__social-link"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="footer__social-link"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#" class="footer__social-link"><i class="fa-brands fa-youtube"></i></a>
+              
             </div>
-            
           </div>
           
-        </div>
+        
         </div>
       </footer>
     
