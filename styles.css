@@ -787,14 +787,19 @@ footer {
 
     h1 {
         font-size: 28px;
+        padding: 0 16px;
     }
 
    .header__description--para {
         font-size: 16px;
    }
 
+   .header__img--wrapper {
+        max-width: 100%;
+   }
+
   .nav__links {
-        padding: 0 8px;
+        padding: 0 24  px;
     }
 
 
