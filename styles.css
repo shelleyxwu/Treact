@@ -764,6 +764,7 @@ footer {
 .footer__logo--text {
     font-size: medium;
     color: #fff;
+    letter-spacing: 0.5px;
 }
 
 .footer__copyright {
@@ -802,6 +803,28 @@ footer {
         padding: 0 24  px;
     }
 
+    .nav__logo,
+    .header__description--para,
+    .customer__logo--title,
+    .customer__logo--img {
+        padding: 0 16px;
+    }
+
+    .customer__logo--img {
+        max-width: 100%;
+    }
+
+   .quality__section {
+        padding: 0 16px;
+   }
+
+   #values .section,
+   .testimonials__img,
+   .footer__column,
+   .footer__logo--container {
+        padding: 0 16px;
+   }
+           
 
 }
 
@@ -810,6 +833,7 @@ footer {
     .btn__menu {
         display: block;
     }
+
     header .row {
         flex-direction: column;
         align-items: center;
@@ -836,28 +860,109 @@ footer {
         max-width: 100%;
     }
 
-    .features__services {
-       display: flex;
-       flex-direction: column;
+    #features .section__description {
+        font-size: 14px;
     }
 
-    
+    .features__services {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 
+    .feature {
+        padding: 16px 8px;
+    }
+
+    .quality__section{
+        padding: 0 16px;
+    }
+
+    #values .section {
+        padding: 0 16px;
+    }
+
+    #plans .section__description {
+        font-size: 16px;
+        padding: 0 16px;
+    }
+
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    } 
+    
+    .start__title {
+        padding:  0 16px;
+        text-align: center;
+    }
+
+    .start__row {
+        flex-direction: column;
+    }
+    
     footer {
         padding: 80px 32px;
     }
+
+    
 }
 
 @media(max-width: 768px) {
+
+
+    h1,
+    .customer__logo--title,
+    #features .section__description,
+    #quality .section__title,
+    #quality .section__header,
+    #quality .section__description,
+    #steps .section__title,
+    #steps .section__header,
+    #steps .steps,
+    #values .section__title,
+    #values .section__header,
+    #values .section__description,
+    #values .values
+    {
+        text-align: center;
+    }
+
+ 
+
+    .header__description--para {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .header__email--input {
+        width: 100%;
+    }
+
+    .customer__logo--img {
+        padding: 16px;
+        width: 100%;
+    }
+
+    .header__img--wrapper {
+        width: 100%;
+    }
+     
+    .features__services {
+        align-items: center;
+    }
+
     #quality .row,
     #values .row {
         flex-direction: column-reverse;
     }
+
     #steps .row,
-    #testimonials .row {
+    #testimonials .row,
+    #steps .step {
         flex-direction: column;
         align-items: center;
     }
+    
     #pricing .row {
         margin-top: 40px;
     }
