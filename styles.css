@@ -557,7 +557,6 @@ header .container {
 .plan__2 .btn,
 .plan__3 .btn {
    padding: 16px 32px;
-   width: 60%;
 }
 
 .plan__1 .btn:hover,
@@ -800,7 +799,7 @@ footer {
    }
 
   .nav__links {
-        padding: 0 24  px;
+        padding: 0 24px;
     }
 
     .nav__logo,
@@ -958,7 +957,8 @@ footer {
 
     #steps .row,
     #testimonials .row,
-    #steps .step {
+    #steps .step,
+    #btn .values__btn {
         flex-direction: column;
         align-items: center;
     }
@@ -966,6 +966,8 @@ footer {
     #pricing .row {
         margin-top: 40px;
     }
+
+   
 }
 
 @media(max-width: 640px) {
