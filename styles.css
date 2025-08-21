@@ -957,7 +957,7 @@ footer {
     #testimonials .row,
     #steps .step,
     .values,
-    .values__btn{
+    .values__btn {
         flex-direction: column;
         align-items: center;
     }
