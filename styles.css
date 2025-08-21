@@ -746,8 +746,8 @@ footer {
 }
 
 .footer__bottom {
-    display: flex; gap: 350px;
-    margin-top: 32px;
+    display: flex; 
+    justify-content: space-between;
 }
 
 .footer__logo--container {
@@ -913,21 +913,17 @@ footer {
     h1,
     .customer__logo--title,
     #features .section__description,
-    #quality .section__title,
-    #quality .section__header,
-    #quality .section__description,
-    #steps .section__title,
-    #steps .section__header,
-    #steps .steps,
-    #values .section__title,
-    #values .section__header,
-    #values .section__description,
-    #values .values
+    #quality .quality__section,
+    #steps .section,
+    #values .section,
+    #testimonials .section,
+    .plan__target,
+    .plan__feature
     {
         text-align: center;
     }
 
- 
+
 
     .header__description--para {
         font-size: 16px;
@@ -947,7 +943,8 @@ footer {
         width: 100%;
     }
      
-    .features__services {
+    .features__services,
+    #testimonials .section__rating {
         align-items: center;
     }
 
@@ -955,18 +952,27 @@ footer {
     #values .row {
         flex-direction: column-reverse;
     }
+
     #steps .row,
     #testimonials .row,
     #steps .step,
-    .values__btn {
+    .values,
+    .values__btn{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #pricing .row {
+        margin-top: 40px;
+    }
+
+    .footer__bottom {
         flex-direction: column;
         align-items: center;
     }
 
-    
-    
-    #pricing .row {
-        margin-top: 40px;
+    .footer__socials {
+        margin-top: 16px;
     }
 }
 
@@ -980,6 +986,10 @@ footer {
     }
     main {
         margin-bottom: 80px;
+    }
+
+    .section__header {
+        font-size: 32px;
     }
 }
 
